@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenges | CyberPath Academy</title>
+  <style>
+  /* ===== CyberPath Academy - style.css (used by all 12 pages) ===== */
+
+  /* Universal selector: reset spacing for every element */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* ----- Page ----- */
+  body {
+    font-family: Verdana, Arial, sans-serif;
+    background-color: #EEF3FA;
+    color: #14375E;
+    line-height: 1.6;
+  }
+
+  /* ----- Header and menu (ID selectors) ----- */
+  #header {
+    background-color: #112B50;
+    padding: 18px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  #logo {
+    color: white;
+    font-size: 26px;
+    letter-spacing: 1px;
+    margin: 0;
+  }
+
+  #menu a {
+    color: #E8F1FA;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 16px;
+  }
+
+  #menu a:hover {
+    color: #5CC0F0;
+  }
+
+  #menu a.active {
+    color: #5CC0F0;
+    font-weight: bold;
+  }
+
+  /* ----- Main content ----- */
+  .content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+
+  h1 {
+    font-size: 38px;
+    color: #14375E;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 26px;
+    margin-top: 30px;
+    margin-bottom: 14px;
+  }
+
+  h3 {
+    font-size: 19px;
+    margin-bottom: 8px;
+  }
+
+  p {
+    margin-bottom: 12px;
+  }
+
+  a {
+    color: #1585C1;
+  }
+
+  ul, ol {
+    margin-left: 24px;
+    margin-bottom: 12px;
+  }
+
+  /* ----- Class selectors ----- */
+  .subtitle {
+    color: #4A6280;
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+
+  .small-text {
+    color: #4A6280;
+    font-size: 14px;
+  }
+
+  .greeting {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 24px;
+  }
+
+  .button {
+    display: inline-block;
+    background-color: #1585C1;
+    color: white;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: #0F6C9C;
+  }
+
+  /* ----- Cards ----- */
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .card {
+    background-color: white;
+    border: 1px solid #C9DCEB;
+    border-radius: 14px;
+    padding: 14px;
+    width: 31%;
+    min-width: 260px;
+    margin-bottom: 24px;
+  }
+
+  .card img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  .half {
+    width: 48%;
+  }
+
+  /* ----- Boxes ----- */
+  .box {
+    background-color: white;
+    border: 1px solid #C9DCEB;
+    border-radius: 14px;
+    padding: 24px;
+    margin-top: 20px;
+  }
+
+  .tip-box {
+    background-color: #DCEBF8;
+    border-left: 6px solid #1585C1;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .hidden-box {
+    display: none;
+    background-color: #F4F8FC;
+    border-left: 5px solid #1585C1;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-top: 12px;
+  }
+
+  /* ----- Lab / article rows ----- */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .row img {
+    width: 300px;
+    border-radius: 10px;
+    margin-right: 24px;
+    margin-bottom: 12px;
+  }
+
+  .row .text {
+    flex: 1;
+    min-width: 260px;
+  }
+
+  .banner {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 14px;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  /* ----- Forms ----- */
+  .form-box {
+    background-color: white;
+    border: 1px solid #C9DCEB;
+    border-radius: 14px;
+    padding: 30px;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .form-box h1 {
+    text-align: center;
+  }
+
+  .field {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #B5CADF;
+    border-radius: 10px;
+    background-color: #F4F8FC;
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+
+  label {
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  .message {
+    font-weight: bold;
+    margin-top: 12px;
+  }
+
+  .question {
+    margin-bottom: 20px;
+  }
+
+  .question p {
+    font-weight: bold;
+    margin-bottom: 6px;
+  }
+
+  /* ----- Table ----- */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+  }
+
+  th, td {
+    border: 1px solid #C9DCEB;
+    padding: 10px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #112B50;
+    color: white;
+  }
+
+  /* ----- Glossary ----- */
+  .term {
+    list-style: none;
+    background-color: white;
+    border: 1px solid #C9DCEB;
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    margin-left: -24px;
+  }
+
+  /* ----- Footer ----- */
+  #footer {
+    background-color: #112B50;
+    color: #C9DCEB;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+  }
+
+  #footer p {
+    margin-bottom: 0;
+  }
+  </style>
+</head>
+<body>
+
+  <div id="header">
+    <h2 id="logo">CYBERPATH</h2>
+    <div id="menu">
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="tutorials.html">Tutorials</a>
+      <a href="practice-labs.html">Labs</a>
+      <a href="challenges.html" class="active">Challenges</a>
+      <a href="resources.html">Resources</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="signup.html">Sign Up</a>
+      <a href="login.html">Login</a>
+    </div>
+  </div>
+
+  <div class="content">
+    <h1>Cybersecurity Challenge</h1>
+    <p class="subtitle">Answer the 5 questions, then press Submit to see your score and feedback.</p>
+    <img src="images/challenge-banner.png" class="banner" alt="Challenge banner">
+
+    <div class="box">
+      <form id="quizForm">
+      <div class="question">
+        <p>1. Which of these is the strongest password?</p>
+        <input type="radio" name="q1" value="a"> password123<br>
+        <input type="radio" name="q1" value="b"> MyDog2020<br>
+        <input type="radio" name="q1" value="c"> T!ger_9Lamp#42<br>
+      </div>
+      <div class="question">
+        <p>2. What is a common sign of a phishing email?</p>
+        <input type="radio" name="q2" value="a"> It pushes you to click a link quickly and enter your password<br>
+        <input type="radio" name="q2" value="b"> It comes from a friend you know and has no links<br>
+        <input type="radio" name="q2" value="c"> It has your real name and no requests<br>
+      </div>
+      <div class="question">
+        <p>3. What does HTTPS in a web address mean?</p>
+        <input type="radio" name="q3" value="a"> The website is free<br>
+        <input type="radio" name="q3" value="b"> The connection to the website is encrypted<br>
+        <input type="radio" name="q3" value="c"> The website is always safe<br>
+      </div>
+      <div class="question">
+        <p>4. What should you do when a software update is available?</p>
+        <input type="radio" name="q4" value="a"> Install it as soon as possible<br>
+        <input type="radio" name="q4" value="b"> Ignore it for a few months<br>
+        <input type="radio" name="q4" value="c"> Turn off the updates<br>
+      </div>
+      <div class="question">
+        <p>5. What is the safest way to use public Wi-Fi?</p>
+        <input type="radio" name="q5" value="a"> Log in to your bank to save time<br>
+        <input type="radio" name="q5" value="b"> Share your password with the café staff<br>
+        <input type="radio" name="q5" value="c"> Avoid entering sensitive information<br>
+      </div>
+        <button type="submit" class="button">Submit Answers</button>
+      </form>
+      <div id="quizResult" style="display:none">
+        <h2 id="scoreText"></h2>
+        <p id="scoreMessage"></p>
+        <ul id="feedbackList"></ul>
+        <img id="trophy" src="images/challenge-trophy.png" alt="Trophy" style="display:none; width:260px; border-radius:10px;">
+      </div>
+    </div>
+  </div>
+
+  <div id="footer">
+    <p>CyberPath Academy | ICT 128 Project | Bahaa Hamayel - 20258293 | &copy; 2026</p>
+  </div>
+
+  <script>
+    var correctAnswers = ['c', 'a', 'b', 'a', 'c'];
+    var explanations = ['Long passwords with mixed characters are the hardest to guess.', 'Phishing messages create urgency so you act without thinking.', 'HTTPS encrypts the connection, but a website can still be fake.', 'Updates fix security problems that attackers can use.', 'Public Wi-Fi is open, so other people may be able to see your data.'];
+
+    // Return the value of the selected radio button (or "" if none)
+    function getAnswer(name) {
+      var options = document.getElementsByName(name);
+      for (var i = 0; i < options.length; i++) {
+        if (options[i].checked) {
+          return options[i].value;
+        }
+      }
+      return "";
+    }
+
+    document.getElementById("quizForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      var score = 0;
+      var list = document.getElementById("feedbackList");
+      list.innerHTML = "";
+
+      for (var i = 0; i < correctAnswers.length; i++) {
+        var answer = getAnswer("q" + (i + 1));
+        var li = document.createElement("li");
+        if (answer === correctAnswers[i]) {
+          score = score + 1;
+          li.textContent = "Question " + (i + 1) + ": Correct. " + explanations[i];
+          li.style.color = "green";
+        } else if (answer === "") {
+          li.textContent = "Question " + (i + 1) + ": Not answered. " + explanations[i];
+          li.style.color = "orange";
+        } else {
+          li.textContent = "Question " + (i + 1) + ": Wrong. " + explanations[i];
+          li.style.color = "red";
+        }
+        list.appendChild(li);
+      }
+
+      document.getElementById("scoreText").textContent = "Your score: " + score + " / " + correctAnswers.length;
+      var message = "";
+      if (score >= 4) {
+        message = "Excellent work! You know the basics of staying safe online.";
+        document.getElementById("trophy").style.display = "block";
+      } else if (score >= 2) {
+        message = "Good effort! Review the tutorials and try again.";
+        document.getElementById("trophy").style.display = "none";
+      } else {
+        message = "Keep learning! Start with the Cyber Basics course.";
+        document.getElementById("trophy").style.display = "none";
+      }
+      document.getElementById("scoreMessage").textContent = message;
+      document.getElementById("quizResult").style.display = "block";
+    });
+  </script>
+</body>
+</html>

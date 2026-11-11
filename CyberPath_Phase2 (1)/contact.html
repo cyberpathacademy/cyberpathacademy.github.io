@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | CyberPath Academy</title>
+  <style>
+  /* ===== CyberPath Academy - style.css (used by all 12 pages) ===== */
+
+  /* Universal selector: reset spacing for every element */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* ----- Page ----- */
+  body {
+    font-family: Verdana, Arial, sans-serif;
+    background-color: #EEF3FA;
+    color: #14375E;
+    line-height: 1.6;
+  }
+
+  /* ----- Header and menu (ID selectors) ----- */
+  #header {
+    background-color: #112B50;
+    padding: 18px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  #logo {
+    color: white;
+    font-size: 26px;
+    letter-spacing: 1px;
+    margin: 0;
+  }
+
+  #menu a {
+    color: #E8F1FA;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 16px;
+  }
+
+  #menu a:hover {
+    color: #5CC0F0;
+  }
+
+  #menu a.active {
+    color: #5CC0F0;
+    font-weight: bold;
+  }
+
+  /* ----- Main content ----- */
+  .content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+
+  h1 {
+    font-size: 38px;
+    color: #14375E;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 26px;
+    margin-top: 30px;
+    margin-bottom: 14px;
+  }
+
+  h3 {
+    font-size: 19px;
+    margin-bottom: 8px;
+  }
+
+  p {
+    margin-bottom: 12px;
+  }
+
+  a {
+    color: #1585C1;
+  }
+
+  ul, ol {
+    margin-left: 24px;
+    margin-bottom: 12px;
+  }
+
+  /* ----- Class selectors ----- */
+  .subtitle {
+    color: #4A6280;
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+
+  .small-text {
+    color: #4A6280;
+    font-size: 14px;
+  }
+
+  .greeting {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 24px;
+  }
+
+  .button {
+    display: inline-block;
+    background-color: #1585C1;
+    color: white;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: #0F6C9C;
+  }
+
+  /* ----- Cards ----- */
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .card {
+    background-color: white;
+    border: 1px solid #C9DCEB;
+    border-radius: 14px;
+    padding: 14px;
+    width: 31%;
+    min-width: 260px;
+    margin-bottom: 24px;
+  }
+
+  .card img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  .half {
+    width: 48%;
+  }
+
+  /* ----- Boxes ----- */
+  .box {
+    background-color: white;
+    border: 1px solid #C9DCEB;
+    border-radius: 14px;
+    padding: 24px;
+    margin-top: 20px;
+  }
+
+  .tip-box {
+    background-color: #DCEBF8;
+    border-left: 6px solid #1585C1;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .hidden-box {
+    display: none;
+    background-color: #F4F8FC;
+    border-left: 5px solid #1585C1;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-top: 12px;
+  }
+
+  /* ----- Lab / article rows ----- */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .row img {
+    width: 300px;
+    border-radius: 10px;
+    margin-right: 24px;
+    margin-bottom: 12px;
+  }
+
+  .row .text {
+    flex: 1;
+    min-width: 260px;
+  }
+
+  .banner {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 14px;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  /* ----- Forms ----- */
+  .form-box {
+    background-color: white;
+    border: 1px solid #C9DCEB;
+    border-radius: 14px;
+    padding: 30px;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .form-box h1 {
+    text-align: center;
+  }
+
+  .field {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #B5CADF;
+    border-radius: 10px;
+    background-color: #F4F8FC;
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+
+  label {
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  .message {
+    font-weight: bold;
+    margin-top: 12px;
+  }
+
+  .question {
+    margin-bottom: 20px;
+  }
+
+  .question p {
+    font-weight: bold;
+    margin-bottom: 6px;
+  }
+
+  /* ----- Table ----- */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+  }
+
+  th, td {
+    border: 1px solid #C9DCEB;
+    padding: 10px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #112B50;
+    color: white;
+  }
+
+  /* ----- Glossary ----- */
+  .term {
+    list-style: none;
+    background-color: white;
+    border: 1px solid #C9DCEB;
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    margin-left: -24px;
+  }
+
+  /* ----- Footer ----- */
+  #footer {
+    background-color: #112B50;
+    color: #C9DCEB;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+  }
+
+  #footer p {
+    margin-bottom: 0;
+  }
+  </style>
+</head>
+<body>
+
+  <div id="header">
+    <h2 id="logo">CYBERPATH</h2>
+    <div id="menu">
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="tutorials.html">Tutorials</a>
+      <a href="practice-labs.html">Labs</a>
+      <a href="challenges.html">Challenges</a>
+      <a href="resources.html">Resources</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="signup.html">Sign Up</a>
+      <a href="login.html">Login</a>
+    </div>
+  </div>
+
+  <div class="content">
+    <h1>Contact Us</h1>
+    <p class="subtitle">Have a question? Send us a message.</p>
+    <div class="row">
+      <img src="images/contact-mail.png" alt="Contact">
+      <div class="text">
+        <div class="form-box" style="margin:0; max-width:none">
+          <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" class="field">
+            <label for="email">Email:</label>
+            <input type="text" id="email" class="field">
+            <label for="message">Message:</label>
+            <textarea id="message" class="field" rows="5"></textarea>
+            <button type="submit" class="button">Send Message</button>
+            <p id="contactResult" class="message"></p>
+          </form>
+        </div>
+        <h3 style="margin-top:20px">Contact Information</h3>
+        <ul>
+          <li>Email: info@cyberpathacademy.com (demo address)</li>
+          <li>Support: Sunday to Thursday, 8:00 AM - 4:00 PM</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer">
+    <p>CyberPath Academy | ICT 128 Project | Bahaa Hamayel - 20258293 | &copy; 2026</p>
+  </div>
+
+  <script>
+    // Check an email address: it must contain @ and a dot
+    function isValidEmail(email) {
+      if (email.indexOf("@") === -1) {
+        return false;
+      }
+      if (email.indexOf(".") === -1) {
+        return false;
+      }
+      return true;
+    }
+  </script>
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      var name = document.getElementById("name").value.trim();
+      var email = document.getElementById("email").value.trim();
+      var message = document.getElementById("message").value.trim();
+      var result = document.getElementById("contactResult");
+
+      if (name === "" || email === "" || message === "") {
+        result.textContent = "Please fill in all the fields.";
+        result.style.color = "red";
+      } else if (!isValidEmail(email)) {
+        result.textContent = "Please enter a valid email address.";
+        result.style.color = "red";
+      } else if (message.length < 10) {
+        result.textContent = "Your message is too short (at least 10 characters).";
+        result.style.color = "red";
+      } else {
+        result.textContent = "Thank you, " + name + "! Your message was sent (demo).";
+        result.style.color = "green";
+        document.getElementById("contactForm").reset();
+      }
+    });
+  </script>
+</body>
+</html>
