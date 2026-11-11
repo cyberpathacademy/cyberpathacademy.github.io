@@ -1,0 +1,27 @@
+CyberPath Academy - Beginner Cybersecurity Checklist
+=====================================================
+
+Passwords
+[ ] Every account has its own password
+[ ] My passwords are at least 12 characters long
+[ ] I use a password manager
+[ ] Two-factor authentication is turned on for email and social media
+
+Email and Messages
+[ ] I check the sender's address before clicking a link
+[ ] I never share passwords or codes by email or chat
+[ ] I report suspicious messages instead of replying to them
+
+Devices
+[ ] My phone and computer have automatic updates turned on
+[ ] My screen locks automatically with a PIN or password
+[ ] Antivirus protection is installed and working
+[ ] I back up my important files regularly
+
+Browsing and Wi-Fi
+[ ] I look for https and the padlock before entering personal information
+[ ] I download apps and files only from official sources
+[ ] I avoid banking or shopping on public Wi-Fi
+[ ] My home Wi-Fi has a strong password
+
+Review this checklist once a month.
